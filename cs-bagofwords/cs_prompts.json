@@ -1,0 +1,38 @@
+{
+        "greeting":{
+                "patterns": ["hi", "how are you", "i need some help", "hello", "good day", "whats up", "howdy", "i need help", "i have another question", "one more thing", "i need help with something else"],
+                "responses": ["Hello! How can I help you today?", "Hello. Welcome to BotBank. How can I help?", "Hi there, how can I help?"]
+        },
+        "goodbye":{
+                "patterns": ["thats all I needed help with", "i dont need anything else", "thats all", "thats it", "thats all i needed"],
+                "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank Have a nice day."]
+        },
+        "open_account":{
+                "patterns": ["i want to open an account", "open account", "create new account", "i would like to open an account", "open new account"],
+                "responses":["Great! First, I need a name to attach to the account.", "I can do that. I need a name to associate with the account."]
+        },
+        "close_account":{
+                "patterns":["i want to close my account", "close account", "empty my account", "i need to close my account", "i want to empty my account"],
+                "responses":["Ok. I can do that, but I need some additional information.", "I can do that. I just need some additional information."]
+        },
+        "account_balance":{
+                "patterns": ["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
+                "responses":["To check your account balance, I'll need some additional information", "Of course. Can you give me your name and account number?"]
+        },
+        "transfer_funds":{
+                "patterns": ["move some money", "transfer funds", "transfer funds to different account", "transfer funds to second account", "move funds to separate account"],
+                "responses":["To check your account balance, I'll need some additional information", "Of course. Can you give me your name and account number?"]
+        },
+        "hours":{
+                "patterns": ["when are you open", "what are your hours", "hours of operation"],
+                "responses": ["All BotBank locations are open 7am-4pm Monday-Friday!"]
+        },
+        "confirm":{
+                "patterns": ["yes", "yes thats right", "correct", "thats correct", "yeah thats right", "yeah", "yup"], 
+                "responses": ["Great. Thanks for confirming.", "Thank you."]
+        },
+        "deny":{
+                "patterns": ["no thats not right", "thats wrong", "no that is not correct", "nope", "no", "thats wrong", "thats not right"], 
+                "responses": ["Sorry, lets start over. What can I help you with?"]
+        }
+}
