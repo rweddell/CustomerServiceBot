@@ -1,1 +1,1 @@
-{"Joe Schmoe": {"phone": "", "requests": []}, "Sally Seashells": {"phone": "1234569876", "requests": ["open_account"]}, "Lester Morrison": {"phone": "4567891234", "requests": ["close_account", "close_account", "open_account", "close_account"]}}
+{"Joe Shmoe": {"phone": "", "requests": []}, "Sally Seashells": {"phone": "1234569876", "requests": ["open_account", "open_account"]}, "Lester Morrison": {"phone": "4567891234", "requests": ["close_account", "close_account", "open_account", "close_account", "open_account", "open_account"]}}
