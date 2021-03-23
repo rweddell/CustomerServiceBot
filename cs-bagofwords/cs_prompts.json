@@ -4,35 +4,33 @@
                 "responses": ["Hello! How can I help you today?", "Hello. Welcome to BotBank. How can I help?", "Hi there, how can I help?"]
         },
         "goodbye":{
-                "patterns": ["thats all I needed help with", "i dont need anything else", "thats all", "thats it", "thats all i needed"],
+                "patterns": ["thats all I needed help with", "i dont need anything else", "thats all", "thats it", "thats all i needed", "no thats it", "nothing else thanks"],
                 "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank Have a nice day."]
         },
         "open_account":{
-                "patterns": ["i want to open an account", "open account", "create new account", "i would like to open an account", "open new account"],
-                "responses":["Great! First, I need a name to attach to the account.", "I can do that. I need a name to associate with the account."]
+                "patterns": [" what is needed for a new account", "requirements for opening an account", "i want to open an account", "open account", "create new account", "i would like to open an account", "open new account"],
+                "responses":["To open a new account, call the customer service line to speak with a representative. \nYou can also use our website to create one using the Account Creation tool or to find a location near you. \nHowever, I can log a request to expedite the process."], 
+                "confirmed":"You will need to speak with a representative, but I can collect some information and log a request to speed up the process."
         },
         "close_account":{
-                "patterns":["i want to close my account", "close account", "empty my account", "i need to close my account", "i want to empty my account"],
-                "responses":["Ok. I can do that, but I need some additional information.", "I can do that. I just need some additional information."]
+                "patterns":["i want to close my account", "close account", "empty my account", "i need to close my account", "i want to empty my account", "cancel my account"],
+                "responses":["To close your account, you'll need to speak with a representative. \nCall the customer support line and have your account information ready. \nThey will be able to send you a check or transfer money to another location. \nBut, I can get the process started by logging a request with your information."], 
+                "confirmed":"You will need to speak with a representative, but I can collect some information and log a request to speed up the process."
         },
         "account_balance":{
                 "patterns": ["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
-                "responses":["To check your account balance, I'll need some additional information", "Of course. Can you give me your name and account number?"]
-        },
-        "transfer_funds":{
-                "patterns": ["move some money", "transfer funds", "transfer funds to different account", "transfer funds to second account", "move funds to separate account"],
-                "responses":["To check your account balance, I'll need some additional information", "Of course. Can you give me your name and account number?"]
+                "responses":["You can check your account balance on BotBank's website, or by calling our customer support line. \nPlease have your account information ready."]
         },
         "hours":{
-                "patterns": ["when are you open", "what are your hours", "hours of operation"],
+                "patterns": ["when are you open", "what are your hours", "hours of operation", "business hours"],
                 "responses": ["All BotBank locations are open 7am-4pm Monday-Friday!"]
         },
         "confirm":{
-                "patterns": ["yes", "yes thats right", "correct", "thats correct", "yeah thats right", "yeah", "yup"], 
+                "patterns": ["yes", "yes thats right", "correct", "thats correct", "yeah thats right", "yeah", "yup", "thats right"], 
                 "responses": ["Great. Thanks for confirming.", "Thank you."]
         },
         "deny":{
-                "patterns": ["no thats not right", "thats wrong", "no that is not correct", "nope", "no", "thats wrong", "thats not right"], 
-                "responses": ["Sorry, lets start over. What can I help you with?"]
+                "patterns": ["no thats not right", "thats wrong", "no that is not correct", "nope", "no", "thats wrong", "thats not right", "no thats not what i want"], 
+                "responses": ["Sorry, let's start over. \nWhat can I help you with?"]
         }
 }
