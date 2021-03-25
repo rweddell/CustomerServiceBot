@@ -19,19 +19,19 @@
         },
         "account_balance":{
                 "patterns": ["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
-                "responses":["You want to check your account balance. Is that correct?"],
+                "responses":["You want to check your account balance. Is that correct?", "So you want to check your account balance?"],
                 "confirmed":"Your account balance is: "
         },
         "hours":{
-                "patterns": ["when are you open", "what are your hours", "hours of operation", "business hours", "open times"],
+                "patterns": ["when are you open", "what are your hours", "hours of operation", "business hours", "open times", "hours", "what are the hours", "what are the hours of operation"],
                 "responses": ["All BotBank locations are open 7am-4pm Monday-Friday!"]
         },
         "confirm":{
                 "patterns": ["yes", "yes thats right", "correct", "thats correct", "yeah thats right", "yeah", "yup", "yep", "thats right"], 
-                "responses": ["Great. Thanks for confirming.", "Thank you."]
+                "responses": ["Great. Thanks for confirming.", "Thank you.", "Thanks.", "Thanks for the confirmation."]
         },
         "deny":{
                 "patterns": ["no thats not right", "thats wrong", "no that is not correct", "nope", "no", "thats wrong", "thats not right", "no thats not what i want"], 
-                "responses": ["Sorry, let's start over. What can I help you with?", "Is there something else I can help you with?", "Let me try again. How can I help?"]
+                "responses": ["Sorry, let's start over. ","Oops. Let me start over.", "Sorry about that. Let me try again."]
         }
 }
