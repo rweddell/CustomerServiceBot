@@ -5,26 +5,27 @@
         },
         "goodbye":{
                 "patterns": ["thats all I needed help with", "i dont need anything else", "thats all", "thats it", "thats all i needed", "no thats it", "nothing else thanks"],
-                "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank Have a nice day."]
+                "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank. Have a nice day!"]
         },
         "open_account":{
                 "patterns": [" what is needed for a new account", "can i open a new account", "requirements for opening an account", "i want to open an account", "open account", "create new account", "i would like to open an account", "open new account"],
                 "responses":["You are trying to open an account. Is that correct?", "You're trying to open a new account. Is that right?"], 
-                "confirmed":"You will need to speak with a representative, but I can log a request to speed up the process."
+                "confirmed":["You will need to speak with a representative, but I can log a request to speed up the process.", "Only a representative can do that, but I can log a request."]
         },
         "close_account":{
                 "patterns":["i want to close my account", "close account", "empty my account", "i need to close my account", "i want to empty my account", "cancel my account"],
                 "responses":["You want to close your account. Is that right?", "You wish to close an existing account. Is that correct?"], 
-                "confirmed":"You will need to speak with a representative, but I can log a request to speed up the process."
+                "confirmed":["You will need to speak with a representative, but I can log a request to speed up the process.", "Only a representative can do that, but I can log a request."]
         },
         "account_balance":{
                 "patterns": ["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
                 "responses":["You want to check your account balance. Is that correct?", "So you want to check your account balance?"],
-                "confirmed":"Your account balance is: "
+                "confirmed":["Ok. I just need some more information.", "I just need to ask a few questions"],
+                "statement":["Your account balance is: "]
         },
         "hours":{
                 "patterns": ["when are you open", "what are your hours", "hours of operation", "business hours", "open times", "hours", "what are the hours", "what are the hours of operation"],
-                "responses": ["All BotBank locations are open 7am-4pm Monday-Friday!"]
+                "responses": ["All BotBank locations are open 7am-4pm, Monday-Friday!"]
         },
         "confirm":{
                 "patterns": ["yes", "yes thats right", "correct", "thats correct", "yeah thats right", "yeah", "yup", "yep", "thats right"], 
