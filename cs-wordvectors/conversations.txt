@@ -145,8 +145,7 @@ Your first and last name is <f_name> <l_name>. Is that correct?
 Yes
 Thanks you. A request has been logged. What else I can help with?
 
-Hi there, how can I help?
-close my account
+i want to close my account
 You want to close your account. Is that right?
 yes
 Only a representative can do that, but I can log a request. Please give me your first and last name.
@@ -304,7 +303,6 @@ Your first and last name is <f_name> <l_name>. Is that correct?
 Yes
 Thanks you. A request has been logged. What else I can help with?
 
-Hi there, how can I help?
 close my account
 You want to close your account. Is that right?
 yes
