@@ -4,11 +4,7 @@ Yes
 I can log a request to speed up the process. Please give me your first and last name.
 <f_name> <l_name>
 Your first and last name is <f_name> <l_name>. Is that correct?
-Correct
-Thank you. Please give me your phone number.
-3847394742
-Your phone number is 3847394742. Is that correct?
-Yes
+Thats right
 A request has been logged. Is there anything else I can help with?
 No that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
@@ -163,10 +159,6 @@ I can log a request to speed up the process. Please give me your first and last 
 <f_name> <l_name>
 Your first and last name is <f_name> <l_name>. Is that correct?
 Correct
-Thank you. Please give me your phone number.
-3847394742
-Your phone number is 3847394742. Is that correct?
-Yes
 A request has been logged. Is there anything else I can help with?
 No that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
