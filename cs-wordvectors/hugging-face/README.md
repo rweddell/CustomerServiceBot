@@ -1,8 +1,9 @@
 # About these files
-These files in the /hugging-face folder were copied directly from [HuggingFace's repository](https://github.com/huggingface/transfer-learning-conv-ai).  
-Most of the files are unaltered, with the exception of train.py.  
+These files in the /hugging-face folder were copied directly from [Hugging Face's repository](https://github.com/huggingface/transfer-learning-conv-ai).  
+The files are unaltered, with the exception of train.py.  
 
-In train.py, on lines 76, 96, and 106, the string "valid" has been changed to "validate" to correct what seems to be a typo.
+In train.py, on lines 76, 96, and 106, the string "valid" has been changed to "validate" to correct what seems to be a typo.  
+It will otherwise cause an exception to be raised as a KeyError.
 
 
 Line 76
