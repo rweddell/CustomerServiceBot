@@ -46,7 +46,7 @@ This implementation allows the scripts to be run in the cloud such as in Colab.
 More information can be found in [this blogpost](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313).   
 ### financial_responses.txt
 A collection of responses from a financial question and answer dataset.  
-They a form of filler in the dataset which are known as 'distractors'.    
+They make a component in the dataset which are known as 'distractors'.    
 The format of Hugging Face's input requires distractor statements included in the input for one of the heads of the model in order to classify a potential response as in-context.   
 ### make_dataset.ipynb
 Running the cells in this notebook will read two text files and formats the contents according to the requirements of Hugging Face.
