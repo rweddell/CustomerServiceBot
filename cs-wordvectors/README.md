@@ -10,7 +10,7 @@ NOTE: The approach is not recommended without access to a GPU.
 Copy the repo to your environment.  
 Install the requirements.txt file. 
 Change the working directory to cs-wordvectors
-Run the train.py script to train a new model with a given dataset. 
+Run the train.py script to train a new model with a given dataset.  
     This will create a subfolder called /run/ where the trained model will be saved.  
 Run interact.py to chat with the model.  
 ```
@@ -24,9 +24,9 @@ python ./hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 This is the recommended approach if you don't have access to a GPU.  
 Copy the repo to your environment.  
 Open the cs-wordvectors.ipynb notebook.  
-Run the cells to train the model and interact with the chatbot.  
-    The cells will run /hugging-face/train.py and /hugging-face/interact.py
-    The training script creates a subfolder where the trained models are saved.  
+Run the cells to train the model and interact with the chatbot.   
+    The cells will run /hugging-face/train.py and /hugging-face/interact.py.   
+    The training script creates a subfolder where the trained models are saved.   
 ```
 git clone https://github.com/rweddell/CustomerServiceBot-RW
 
