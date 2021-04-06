@@ -27,7 +27,7 @@ Line 106
 ```
 
 
-Additionally, line 26 was changed to include custom tokens which will represent a customer's first and last name.
+Additionally, line 26 was changed to include custom tokens which I am testing in hopes that they will represent a customer's first and last name.
 
 ```
 --- ATTR_TO_SPECIAL_TOKEN = {'bos_token': '<bos>', 'eos_token': '<eos>', 'pad_token': '<pad>',
