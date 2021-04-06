@@ -20,9 +20,9 @@ cd /CustomerServicebot-RW/cs-wordvectors
 
 pip install -r requirements.txt
 
-python ./hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
+python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
 
-python ./hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
+python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 ```
 ### Using a Colab notebook
 This is the recommended approach if you don't have access to a GPU.   
@@ -35,7 +35,7 @@ Copy the following commands to a new cell and run.
 ```
 In a new cell, run the train.py script.  
 ```
-!python ./hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=3 --train_batch_size=3 --valid_batch_size=3 --max_history=4  
+!python /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=3 --train_batch_size=3 --valid_batch_size=3 --max_history=4  
 ```
 The train.py script will create a new subfolder called 'run'.  
 Within this folder is another folder that holds the trained model.   
