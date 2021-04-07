@@ -19,10 +19,10 @@ If you haven't already, download the latest version of virtualenv using pip.
 pip install virtualenv
 ```
 
-Navigate to the directory where this file and create a virtual environment and create a virtual environment.
+Navigate to the directory where you want to work and create a virtual environment.
 
 ```python
-venv environment_name
+virtualenv environment_name
 ```
 
 Activate your environment by running the activation script.

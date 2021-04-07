@@ -35,7 +35,7 @@ Copy the following commands to a new cell and run.
 ```
 In a new cell, run the train.py script.  
 ```
-!python /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-wordvectors/cs_training_data.json" --n_epochs=3 --train_batch_size=3 --valid_batch_size=3 --max_history=4  
+!python /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-wordvectors/cs_training_data.json" --n_epochs=30 --train_batch_size=4 --valid_batch_size=2 --max_history=5  
 ```
 The train.py script will create a new subfolder called 'run'.  
 Within this folder is another folder that holds the trained model.   
