@@ -3,9 +3,7 @@ You are trying to open an account. Is that correct?
 Yes
 I can log a request to speed up the process. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Thats right
-A request has been logged. Is there anything else I can help with?
+A request has been logged for your account. Is there anything else I can help with?
 No that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -14,9 +12,7 @@ You wish to close an existing account. Is that correct?
 That's right.
 I can log a request to speed up the process. Please give me your first and last name.
 My name is <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Correct.
-A request has been logged. Is there anything else I can help with?
+A request has been logged for your account. Is there anything else I can help with?
 That's all.
 Thank you for using BotBank.
 
@@ -25,9 +21,6 @@ You want to check your account balance. Is that correct?
 thats right
 Thanks for the confirmation.
 Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Correct
 Your account balance is $8087545.95
 Is there anything else I can help with?
 that's all
@@ -38,10 +31,8 @@ All BotBank locations are open 7am to 4pm Monday through Friday. Is there anythi
 account balance
 You want to check your account balance. Is that correct?
 yes
-Thanks for confirming. Please give me your first and last name.
+Thank you. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
 Thank you. Your account balance is $3971745.63
 Is there anything else I can help with?
 That's all
@@ -52,9 +43,7 @@ You're trying to open a new account. Is that right?
 yes
 I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Great. Thanks for confirming. A request has been logged. What else I can help with?
+Great. Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -62,8 +51,6 @@ Close my account
 You want to close your account. Is that right?
 Yes
 I can log a request to speed up the process. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
 no
 Sorry about that. Let me try again. What else I can help with?
 nothing 
@@ -78,8 +65,6 @@ open a new account
 You are trying to open an account. Is that correct?
 yes that is right
 I can log a request to speed up the process. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
 no that is not right
 Sorry, let's start over. What else I can help with?
 
@@ -88,9 +73,7 @@ You wish to close an existing account. Is that correct?
 yes
 You will need to speak with a representative, but I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Thank you. A request has been logged. What else I can help with?
+Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -99,8 +82,6 @@ So you want to check your account balance?
 yes
 Thanks for the confirmation I just need to ask a few questions. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-yes
 Your account balance is $2544249. What else I can help with?
 that's all
 Thank you for using BotBank.
@@ -109,8 +90,6 @@ check account balance
 You want to check your account balance. Is that correct?
 yes
 Thank you. I just need to ask a few questions. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is . Is that correct?
 no
 Oops. Let me start over. What else I can help with?
 
@@ -122,8 +101,6 @@ check account balance
 You want to check your account balance. Is that correct?
 yes
 Thank you. I just need to ask a few questions. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is. Is that correct?
 no
 Sorry, let's start over. What else I can help with?
 
@@ -137,18 +114,14 @@ You're trying to open a new account. Is that right?
 yes
 Only a representative can do that, but I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Thanks you. A request has been logged. What else I can help with?
+Thank you. A request has been logged for your account. What else I can help with?
 
 i want to close my account
 You want to close your account. Is that right?
 yes
 Only a representative can do that, but I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-yes
-Thanks for confirming. A request has been logged. What else I can help with?
+Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank. Have a nice day.
 
@@ -157,9 +130,7 @@ You are trying to open an account. Is that correct?
 Yes
 I can log a request to speed up the process. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Correct
-A request has been logged. Is there anything else I can help with?
+A request has been logged for your account. Is there anything else I can help with?
 No that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -168,9 +139,7 @@ You wish to close an existing account. Is that correct?
 That's right.
 I can log a request to speed up the process. Please give me your first and last name.
 My name is <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Correct.
-A request has been logged. Is there anything else I can help with?
+A request has been logged for your account. Is there anything else I can help with?
 That's all.
 Thank you for using BotBank.
 
@@ -180,9 +149,7 @@ thats right
 Thanks for the confirmation.
 Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Correct
-Your account balance is $8087545.95
+Your account balance is $546102.29
 Is there anything else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
@@ -192,11 +159,9 @@ All BotBank locations are open 7am to 4pm Monday through Friday. Is there anythi
 account balance
 You want to check your account balance. Is that correct?
 yes
-Thanks for confirming. Please give me your first and last name.
+Thank you. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Thank you. Your account balance is $3971745.63
+Thank you. Your account balance is $123456.63
 Is there anything else I can help with?
 That's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
@@ -206,9 +171,7 @@ You're trying to open a new account. Is that right?
 yes
 I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Great. Thanks for confirming. A request has been logged. What else I can help with?
+Great. Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -216,9 +179,7 @@ Close my account
 You want to close your account. Is that right?
 Yes
 I can log a request to speed up the process. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-no
+that's not what I want
 Sorry about that. Let me try again. What else I can help with?
 nothing 
 Thank you for using BotBank.
@@ -232,19 +193,15 @@ open a new account
 You are trying to open an account. Is that correct?
 yes that is right
 I can log a request to speed up the process. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-no that is not right
+no that's not what I want
 Sorry, let's start over. What else I can help with?
 
 i want to close my account
 You wish to close an existing account. Is that correct?
 yes
 You will need to speak with a representative, but I can log a request. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Thank you. A request has been logged. What else I can help with?
+my name is <f_name> <l_name>
+Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank Have a nice day.
 
@@ -252,10 +209,8 @@ I want to check my account balance
 So you want to check your account balance?
 yes
 Thanks for the confirmation I just need to ask a few questions. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
 yes
-Your account balance is $2544249. What else I can help with?
+Your account balance is $7854.84. What else I can help with?
 that's all
 Thank you for using BotBank.
 
@@ -263,9 +218,7 @@ check account balance
 You want to check your account balance. Is that correct?
 yes
 Thank you. I just need to ask a few questions. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is . Is that correct?
-no
+no wait i don't want that
 Oops. Let me start over. What else I can help with?
 
 check account
@@ -276,9 +229,7 @@ check account balance
 You want to check your account balance. Is that correct?
 yes
 Thank you. I just need to ask a few questions. Please give me your first and last name.
-<f_name> <l_name>
-Your first and last name is. Is that correct?
-no
+no lets do something else
 Sorry, let's start over. What else I can help with?
 
 what are the hours?
@@ -291,17 +242,13 @@ You're trying to open a new account. Is that right?
 yes
 Only a representative can do that, but I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-Yes
-Thanks you. A request has been logged. What else I can help with?
+Thank you. A request has been logged for your account. What else I can help with?
 
 close my account
 You want to close your account. Is that right?
 yes
 Only a representative can do that, but I can log a request. Please give me your first and last name.
 <f_name> <l_name>
-Your first and last name is <f_name> <l_name>. Is that correct?
-yes
-Thanks for confirming. A request has been logged. What else I can help with?
+Thank you. A request has been logged for your account. What else I can help with?
 that's all
 Glad I could help. Thanks for choosing BotBank. Have a nice day.
