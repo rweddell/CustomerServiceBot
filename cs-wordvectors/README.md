@@ -24,6 +24,7 @@ python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_pa
 
 python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 ```
+
 ### Using a Colab notebook
 This is the recommended approach if you don't have access to a GPU.   
 Log into colab.research.google.com and open a new notebook.  

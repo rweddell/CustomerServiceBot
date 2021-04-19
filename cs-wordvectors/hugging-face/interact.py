@@ -8,6 +8,7 @@ from argparse import ArgumentParser
 from itertools import chain
 from pprint import pformat
 import warnings
+import system
 
 import torch
 import torch.nn.functional as F
@@ -134,6 +135,14 @@ def run():
     personalities = [dialog["personality"] for dataset in dataset.values() for dialog in dataset]
     personality = random.choice(personalities)
     logger.info("Selected personality: %s", tokenizer.decode(chain(*personality)))
+
+    # Uses os.system and os.name to clear screen
+    # for windows 
+    if name == 'nt': 
+        _ = system('cls') 
+    # for mac/linux 
+    else: 
+        _ = system('clear') 
 
     history = []
     while True:
