@@ -20,6 +20,8 @@ cd /CustomerServicebot-RW/cs-nlg
 
 pip install -r requirements.txt
 
+python -m spacy download en
+
 python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
 
 python ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
@@ -64,9 +66,9 @@ Implement the scripts written by Hugging Face through a Jupyter notebook.
 This implementation allows the scripts to be run in the cloud such as in Colab.   
 More information can be found in [this blogpost](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313).   
 ### financial_responses.txt
-A collection of responses from a financial question and answer dataset.  
-They make a component in the dataset which are known as 'distractors'.    
-The format of Hugging Face's input requires distractor statements included in the input for one of the heads of the model in order to classify a potential response as in-context.   
+A collection of responses from the FiQA financial question and answer dataset.  
+They makeup the 'distractor' component of the dataset.   
+The format of Hugging Face's input requires distractor statements in the input for one of the model heads in order to classify a potential response as in-context.   
 ### make_dataset.ipynb
 Running the cells in this notebook will read two text files and formats the contents according to the requirements of Hugging Face.
 ### training_schema.
