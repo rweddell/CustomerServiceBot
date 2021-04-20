@@ -1,4 +1,4 @@
-# Customer Service bot using word vectors and Hugging Face
+# Customer Service bot using natural language generation and Hugging Face
 
 The content in /cs-nlg is used to format a dataset to fine-tune a pretrained BERT model.  
 It implements code that has been copied from Hugging Face to train a double-headed model which will simulate a conversation.
@@ -11,6 +11,8 @@ Copy the repo to your environment.
 Install the requirements.txt file. 
 Change the working directory to cs-nlg
 Run the train.py script to train a new model with a given dataset.  
+    - This script can be run with a different dataset by changing the '--dataset_path' argument or by removing it entirely.
+    - If the argument is removed, the script will reference the dataset hosted by Hugging Face.  
 This will create a subfolder called /run/ where the trained model will be saved.  
 Run interact.py to chat with the model.  
 ```
@@ -22,14 +24,15 @@ pip install -r requirements.txt
 
 python -m spacy download en
 
-python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
+python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=20 --train_batch_size=4 --valid_batch_size=2 --max_history=4
 
 python ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 ```
 
 ### Using a Colab notebook
 This is the recommended approach if you don't have access to a GPU.   
-Log into colab.research.google.com and open a new notebook.  
+Log into colab.research.google.com and open a new notebook or copy [cs-nlgbot.ipynb](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/cs-nlgbot.ipynb).  
+
 Copy the following commands to a new cell and run.    
 ```
 !git clone https://github.com/rweddell/CustomerServiceBot-RW  
@@ -37,11 +40,13 @@ Copy the following commands to a new cell and run.
 !python -m spacy download en 
 ```
 In a new cell, run the train.py script.  
+    - This script can be run with a different dataset by changing the '--dataset_path' argument or by removing it entirely.
+    - If the argument is removed, the script will reference the dataset hosted by Hugging Face.  
 ```
-!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-nlg/cs_training_data.json" --n_epochs=30 --train_batch_size=4 --valid_batch_size=2 --max_history=4  
+!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-nlg/cs_training_data.json" --n_epochs=20 --train_batch_size=4 --valid_batch_size=2 --max_history=4  
 ```
 The train.py script will create a new subfolder called 'run'.  
-Within this folder is another folder that holds the trained model.   
+Within this folder is a subfolder that holds the trained model.   
 In the last cell, run the interact.py script to chat with the model.  
 ```
 # Example:
@@ -50,6 +55,16 @@ In the last cell, run the interact.py script to chat with the model.
 # Replace the --model_checkpoint argument with the path to your trained model
 !python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'  
 ```  
+
+### Creating your own dataset
+The [make_dataset.ipynb](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/make_dataset.ipynb) can be used to format a given text file of conversations into the JSON format required by Hugging Face.  
+The conversations have some requirements. Each conversation in the file should:  
+    - be separated from other conversations with an empty line
+    - begin with 'user' input, followed on the next line by the chatbot
+    - should end with chatbot response 
+Check [conversations.txt](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/conversations.txt) for example formatting.
+
+The notebook also references a document of extra text for its 'distractor' requirement, which is essentially noise added to the input. The [financial_responses.txt](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/financial_responses.txt) can be used, but if you are making your own dataset, you may want to find your own distractors.
 
 ## About the files
 ### hugging-face/
