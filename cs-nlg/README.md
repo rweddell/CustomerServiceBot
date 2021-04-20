@@ -1,6 +1,6 @@
 # Customer Service bot using word vectors and Hugging Face
 
-The content in /cs-wordvectors is used to format a dataset to finetune a pretrained BERT model.  
+The content in /cs-nlg is used to format a dataset to fine-tune a pretrained BERT model.  
 It implements code that has been copied from Hugging Face to train a double-headed model which will simulate a conversation.
 
 
@@ -9,20 +9,20 @@ It implements code that has been copied from Hugging Face to train a double-head
 NOTE: The approach is not recommended without access to a GPU.  
 Copy the repo to your environment.  
 Install the requirements.txt file. 
-Change the working directory to cs-wordvectors
+Change the working directory to cs-nlg
 Run the train.py script to train a new model with a given dataset.  
 This will create a subfolder called /run/ where the trained model will be saved.  
 Run interact.py to chat with the model.  
 ```
 git clone https://github.com/rweddell/CustomerServiceBot-RW
 
-cd /CustomerServicebot-RW/cs-wordvectors
+cd /CustomerServicebot-RW/cs-nlg
 
 pip install -r requirements.txt
 
-python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
+python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="cs_training_data.json" --n_epochs=1 --train_batch_size=1 --valid_batch_size=3 --max_history=4
 
-python ./CustomerServiceBot-RW/cs-wordvectors/hugging-face/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
+python ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 ```
 
 ### Using a Colab notebook
@@ -31,22 +31,22 @@ Log into colab.research.google.com and open a new notebook.
 Copy the following commands to a new cell and run.    
 ```
 !git clone https://github.com/rweddell/CustomerServiceBot-RW  
-!pip install -r /content/CustomerServiceBot-RW/cs-wordvectors/requirements.txt
+!pip install -r /content/CustomerServiceBot-RW/cs-nlg/requirements.txt
 !python -m spacy download en 
 ```
 In a new cell, run the train.py script.  
 ```
-!python /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-wordvectors/cs_training_data.json" --n_epochs=30 --train_batch_size=4 --valid_batch_size=2 --max_history=5  
+!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-nlg/cs_training_data.json" --n_epochs=30 --train_batch_size=4 --valid_batch_size=2 --max_history=4  
 ```
 The train.py script will create a new subfolder called 'run'.  
 Within this folder is another folder that holds the trained model.   
 In the last cell, run the interact.py script to chat with the model.  
 ```
 # Example:
-# !python  /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/interact.py --model_checkpoint='/content/runs/Apr04_18-29-05_70d03ffb9d9e_openai-gpt'
+# !python  /content/CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='/content/runs/Apr04_18-29-05_70d03ffb9d9e_openai-gpt'
 
 # Replace the --model_checkpoint argument with the path to your trained model
-!python /content/CustomerServiceBot-RW/cs-wordvectors/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'  
+!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'  
 ```  
 
 ## About the files

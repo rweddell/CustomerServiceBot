@@ -135,6 +135,8 @@ def run():
     personality = random.choice(personalities)
     logger.info("Selected personality: %s", tokenizer.decode(chain(*personality)))
 
+    print('\n\n\nHello! Welcome to botbank! I can help create or close accounts, find your account balance, or give you our hours of operation. How Can I help?')
+
     history = []
     while True:
         raw_text = input("You: ")
