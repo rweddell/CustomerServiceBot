@@ -73,7 +73,7 @@ These conversations were collected from sessions run with the cs-bagofwords chat
 ### cs_training_data.json
 This is the json representation of the conversations.txt file after it has been passed through make_dataset.ipynb.   
 It is formatted to meet the input requirements of the Hugging Face implementation.  
-### cs_wordvectors.ipynb
+### cs_nlgbot.ipynb
 Implement the scripts written by Hugging Face through a Jupyter notebook.  
 This implementation allows the scripts to be run in the cloud such as in Colab.   
 More information can be found in [this blogpost](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313).   
@@ -82,6 +82,6 @@ A collection of responses from the FiQA financial question and answer dataset.
 They makeup the 'distractor' component of the dataset.   
 The format of Hugging Face's input requires distractor statements in the input for one of the model heads in order to classify a potential response as in-context.   
 ### make_dataset.ipynb
-Running the cells in this notebook will read two text files and formats the contents according to the requirements of Hugging Face.
+Running the cells in this notebook will read two text files and format the contents according to the requirements of Hugging Face. A more thorough description is found within the notebook.  
 ### training_schema.
 Shows the schema required by Hugging Face.

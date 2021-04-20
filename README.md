@@ -4,14 +4,14 @@ Example customer service chatbots of various complexities and implementations
 ## Description
 This project uses python/jupyter to train and interact with chatbots. The use case is in the form of a customer service agent at a bank.
 
-In this repo are two different implementations of chatbots. One uses a model which returns canned responses based on the classification of the intent of user input. The second uses natural language generation to create a response to user input based on conversation history. 
+In this repo are two different implementations. One uses a model which returns canned responses based on the classification of the intent of user input. The second uses natural language generation to build a response to user input based on conversation history. 
 
 ## Thought process and development
 The original intent of this project was to explore the viability of using natural language generation in a mock production-level chatbot. At its heart, the interaction between a user and a chatbot is a conversation. The chatbot needs to collect the user's intent and output a response. 
 
 At the time of this writing, the state-of-the-art for a conversational chatbot is [created by Hugging Face](https://convai.huggingface.co/), which uses a double-headed BERT model and a specifically formatted dataset. The dataset holds a personality as well as a ordered sequence of chat history. The chat history is integrated with the persona to build responses.  
 
-Natural Language Generation (NLG) is a process by which a linguistically realistic sequence of words is constructed using a seed of text, such as a question or a greeting. The risk with NLG is that it is, at least at this point in time, an inherintly unpredictable process. There is always a possibiility that the output does not make sense linguistically or contextually.
+Natural Language Generation (NLG) is a process by which a linguistically realistic sequence of words is constructed using a seed of text, such as a question or a greeting. The risk with NLG is that it is, at least at this point in time, an inherintly unguaranteeable process. There is always a possibiility that the output does not make sense linguistically or contextually.
 
 Below are two example conversations generated from a HuggingFace model fine-tuned on a dataset created to represent conversations between a chatbot and a banking customer. The files in [/cs-nlg](https://github.com/rweddell/CustomerServiceBot-RW/tree/main/cs-nlg) were used to create this output from a Colab notebook.
 
@@ -53,7 +53,7 @@ Bot: glad i could help. thanks for choosing botbank have a nice day.
 
 It is clear that the output is mostly in-context, but would not result in a satisfying customer experience. The customer had to repeat their statements, and the responses from the chatbot were often vague and unhelpful. At best it seems like talking to a person who is mostly focused on something else.  
 
-This is in contrast to a model which uses canned responses. This type of model classifies the user's intent, asks for clarification, and outputs a pre-written response. The result is extremely effective, but is the conversational equivalent of paperwork. The following result was obtained using the files within [/cs-cannedresponse](https://github.com/rweddell/CustomerServiceBot-RW/tree/main/cs-cannedresponse).
+This is in contrast to a model which uses canned responses. This type of model classifies the user's intent, asks for clarification, and outputs a pre-written response. The result is extremely effective, but is the conversational equivalent of filling out paperwork. The following result was obtained using the files within [/cs-cannedresponse](https://github.com/rweddell/CustomerServiceBot-RW/tree/main/cs-cannedresponse).
 
 ```
 Bot: Hi there, how can I help?
@@ -81,4 +81,4 @@ You: No that's all
 Bot: Glad I could help. Thanks for choosing BotBank! Have a nice day.
 ```
 
-The result is that NLG on its own is not viable when a user is seeking specific information or a specific interaction. Specific outputs based on user intents cannot be guaranteed. 
+The result is that NLG on its own is not viable when a user is seeking specific information or a specific interaction. Specific outputs based on user intents cannot be guaranteed. However, results may be improved with a much larger training set, and longer training times.
