@@ -3,13 +3,11 @@
 The content in /cs-nlg is used to format a dataset to fine-tune a pretrained BERT model.  
 It implements code that has been copied from Hugging Face to train a double-headed model which will simulate a conversation.
 
-
 ## How to use this code
 ### Using command line
-NOTE: The approach is not recommended without access to a GPU.  
+>NOTE: Without access to a GPU, this approach could be time-consuming depending on training parameters and size of training data.    
 Copy the repo to your environment.  
 Install the requirements.txt file. 
-Change the working directory to cs-nlg
 Run the train.py script to train a new model with a given dataset.  
     - This script can be run with a different dataset by changing the '--dataset_path' argument or by removing it entirely.
     - If the argument is removed, the script will reference the dataset hosted by Hugging Face.  
@@ -17,8 +15,6 @@ This will create a subfolder called /run/ where the trained model will be saved.
 Run interact.py to chat with the model.  
 ```
 git clone https://github.com/rweddell/CustomerServiceBot-RW
-
-cd /CustomerServicebot-RW/cs-nlg
 
 pip install -r requirements.txt
 
@@ -29,11 +25,12 @@ python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="cs_t
 python ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'
 ```
 
-### Using a Colab notebook
-This is the recommended approach if you don't have access to a GPU.   
-Log into colab.research.google.com and open a new notebook or copy [cs-nlgbot.ipynb](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/cs-nlgbot.ipynb).  
-
-Copy the following commands to a new cell and run.    
+### Using a notebook   
+Copy [cs-nlgbot.ipynb](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-nlg/cs-nlgbot.ipynb) to your working environment and execute the cells   
+  
+or  
+  
+Open a new Jupyter notebook and copy the following commands to a new cell and run.    
 ```
 !git clone https://github.com/rweddell/CustomerServiceBot-RW  
 !pip install -r /content/CustomerServiceBot-RW/cs-nlg/requirements.txt

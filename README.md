@@ -82,38 +82,3 @@ Bot: Glad I could help. Thanks for choosing BotBank! Have a nice day.
 ```
 
 The result is that NLG on its own is not viable when a user is seeking specific information or a specific interaction. Specific outputs based on user intents cannot be guaranteed. 
-
-## Creating a virtual environment with venv
-
-It is recommended to be run in a virtual environment to avoid collisions between different Python package versions.  
-Virtual environments can be created using Conda or Virtualenv.  
-
-This is a brief overview of how to create virtual environments. More details can be found on the [source site](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#:~:text=To%20create%20a%20virtual%20environment,virtualenv%20in%20the%20below%20commands.&text=The%20second%20argument%20is%20the,project%20and%20call%20it%20env%20.).
-
-If you haven't already, download the latest version of virtualenv using pip.  
-
-```python
-pip install virtualenv
-```
-
-Navigate to the directory where you want to work and create a virtual environment.  
-
-```python
-virtualenv environment_name  
-```
-
-Activate your environment by running the activation script.  
-
-```python
-# windows and colab
-environment_name\Scripts\activate
-
-# mac and linux
-source env/bin/activate
-```
-
-When the environment is not in use, it can be deactivated.  
-
-```python
-deactivate
-```
