@@ -1,7 +1,6 @@
 torch
 spacy
 pytorch-ignite
-tensorflow==2.4.1
+tensorflow
 transformers==2.5.1
 tensorboardX==1.8
-pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz

@@ -13,7 +13,7 @@ At the time of this writing, the state-of-the-art for a conversational chatbot i
 
 Natural Language Generation (NLG) is a process by which a linguistically realistic sequence of words is constructed using a seed of text, such as a question or a greeting. The risk with NLG is that it is, at least at this point in time, an inherintly unpredictable process. There is always a possibiility that the output does not make sense linguistically or contextually.
 
-Below are two example conversations generated from a HuggingFace model fine-tuned on a dataset created to represent conversations between a chatbot and a banking customer. The files in /cs-nlg were used to create this output from a Colab notebook.
+Below are two example conversations generated from a HuggingFace model fine-tuned on a dataset created to represent conversations between a chatbot and a banking customer. The files in [/cs-nlg](https://github.com/rweddell/CustomerServiceBot-RW/tree/main/cs-nlg) were used to create this output from a Colab notebook.
 
 ```
 You: hi can I open a new account?
@@ -81,8 +81,7 @@ You: No that's all
 Bot: Glad I could help. Thanks for choosing BotBank! Have a nice day.
 ```
 
-The conclusion drawn from the above examples is that, on its own, NLG is not viable in a production-level chatbot. At least not for customer service. Perhaps a mixed-implementation of NLG and canned responses would yeild a chatbot that has some unique character, but still replies appropriately and helpfully. 
-
+The result is that NLG on its own is not viable when a user is seeking specific information or a specific interaction. Specific outputs based on user intents cannot be guaranteed. 
 
 ## Creating a virtual environment with venv
 
