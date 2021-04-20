@@ -78,7 +78,7 @@ You: What are the hours of operation?
 Bot: All BotBank locations are open 7am-4pm Monday-Friday!
 Bot: Is there anything else I can help with?
 You: No that's all
-Bot: Glad I could help. Thanks for choosing BotBank Have a nice day.
+Bot: Glad I could help. Thanks for choosing BotBank! Have a nice day.
 ```
 
 ## Creating a virtual environment with venv

@@ -5,7 +5,7 @@
         },
         "goodbye":{
                 "patterns": ["thats all I needed help with", "i dont need anything else", "thats all", "thats it", "thats all i needed", "no thats it", "nothing else thanks"],
-                "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank. Have a nice day!"]
+                "responses": ["Thank you for using BotBank.", "Glad I could help. Thanks for choosing BotBank! Have a nice day!"]
         },
         "open_account":{
                 "patterns": [" what is needed for a new account", "can i open a new account", "requirements for opening an account", "i want to open an account", "open account", "create new account", "i would like to open an account", "open new account"],
@@ -18,7 +18,7 @@
                 "confirmed":["You will need to speak with a representative, but I can log a request to speed up the process.", "Only a representative can do that, but I can log a request."]
         },
         "account_balance":{
-                "patterns": ["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
+                "patterns":["check account balance", "can you tell me my account balance", "whats my account balance", "how much in my account", "i need to check my account balance"],
                 "responses":["You want to check your account balance. Is that correct?", "So you want to check your account balance?"],
                 "confirmed":["Ok. I just need some more information.", "I just need to ask a few questions"],
                 "statement":["Your account balance is: "]
