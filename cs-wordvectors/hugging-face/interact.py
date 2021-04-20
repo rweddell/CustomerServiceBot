@@ -147,7 +147,7 @@ def run():
         history.append(out_ids)
         history = history[-(2*args.max_history+1):]
         out_text = tokenizer.decode(out_ids, skip_special_tokens=True)
-        print("Bot: ", out_text)
+        print("Bot:", out_text)
 
 
 if __name__ == "__main__":
