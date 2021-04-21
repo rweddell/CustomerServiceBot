@@ -33,24 +33,24 @@ or
 Open a new Jupyter notebook and copy the following commands to a new cell and run.    
 ```
 !git clone https://github.com/rweddell/CustomerServiceBot-RW  
-!pip install -r /content/CustomerServiceBot-RW/cs-nlg/requirements.txt
-!python -m spacy download en 
+!pip install -r ./CustomerServiceBot-RW/cs-nlg/requirements.txt
+!python -m spacy download en_core_web_sm
 ```
 In a new cell, run the train.py script.  
     - This script can be run with a different dataset by changing the '--dataset_path' argument or by removing it entirely.
     - If the argument is removed, the script will reference the dataset hosted by Hugging Face.  
 ```
-!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="/content/CustomerServiceBot-RW/cs-nlg/cs_training_data.json" --n_epochs=20 --train_batch_size=4 --valid_batch_size=2 --max_history=4  
+!python ./CustomerServiceBot-RW/cs-nlg/hugging-face/train.py --dataset_path="./CustomerServiceBot-RW/cs-nlg/cs_training_data.json" --n_epochs=20 --train_batch_size=4 --valid_batch_size=2 --max_history=4  
 ```
 The train.py script will create a new subfolder called 'run'.  
 Within this folder is a subfolder that holds the trained model.   
 In the last cell, run the interact.py script to chat with the model.  
 ```
 # Example:
-# !python  /content/CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='/content/runs/Apr04_18-29-05_70d03ffb9d9e_openai-gpt'
+# !python  ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='./runs/Apr04_18-29-05_70d03ffb9d9e_openai-gpt'
 
 # Replace the --model_checkpoint argument with the path to your trained model
-!python /content/CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'  
+!python ./CustomerServiceBot-RW/cs-nlg/hugging-face/interact.py --model_checkpoint='<path/to/trained/model/>'  
 ```  
 
 ### Creating your own dataset
