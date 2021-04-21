@@ -16,7 +16,7 @@ Run interact.py to chat with the model.
 ```
 git clone https://github.com/rweddell/CustomerServiceBot-RW
 
-pip install -r requirements.txt
+pip install -r /CustomerServiceBot-RW/cs-nlg/requirements.txt
 
 python -m spacy download en
 
