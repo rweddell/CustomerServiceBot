@@ -20,7 +20,7 @@ JSON file containing the dataset for training a chatbot as well as holding the r
 The file is a list of intents with associated inputs and outputs.  
 The chatting function references this file to pull the associated response once the user's input has been classified.  
 ### cs_training_data.json
-This is the json representation of the conversations.txt file after it has been passed through make_dataset.ipynb.   
+This is the JSON representation of the conversations.txt file after it has been passed through make_dataset.ipynb.   
 It is formatted to meet the input requirements of the Hugging Face implementation.  
 ### user_contacts.json
 A mock user-data reference repository which contains user names, phone numbers, and any past requests.  
