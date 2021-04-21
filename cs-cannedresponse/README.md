@@ -8,7 +8,9 @@ Once the input has been classified a 'canned response' fitting the intent is ret
 From command line clone the repository and install the requirements    
 ```
 git clone https://github.com/rweddell/CustomerServiceBot-RW  
-pip install -r /content/CustomerServiceBot-RW/cs-cannedresponse/requirements.txt
+
+# If running this from a Colab environment use: /content/CustomerServiceBot-RW/cs-cannedresponse/requirements.txt
+pip install -r /CustomerServiceBot-RW/cs-cannedresponse/requirements.txt
 ```
 Open [cs_cannedbot.ipynb](https://github.com/rweddell/CustomerServiceBot-RW/blob/main/cs-cannedresponse/cs_cannedbot.ipynb) and follow the instructions. Execute the cells when you are ready.  
 
